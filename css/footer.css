@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 60px; 
+  }
+  
+  #tablero-juego {
+    flex: 1; 
+  }
+  
+  footer {
+    position: relative; 
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background: #c20e0e00;
+    padding: 6px;
+    cursor: pointer;
+    text-shadow: 0 0 10px white, 0 0 20px #00f0ff;
+    animation: cambioColorFooter 5s infinite alternate;
+  }
+  
+
+  
+  @keyframes cambioColorFooter {
+    0% { color: #ff6b6b; text-shadow: 0 0 10px #ff6b6b; }
+    25% { color: #feca57; text-shadow: 0 0 10px #feca57; }
+    50% { color: #1dd1a1; text-shadow: 0 0 10px #1dd1a1; }
+    75% { color: #5f27cd; text-shadow: 0 0 10px #5f27cd; }
+    100% { color: #54a0ff; text-shadow: 0 0 10px #54a0ff; }
+  }
+  
